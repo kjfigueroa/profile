@@ -1,0 +1,367 @@
+@import url("barstyles.css");
+@import url("chart.css");
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    background-color: #E9EEED;
+    padding-top: 4%;
+  }
+
+  a {
+    color: #149ddd;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /* Back to top button */
+
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 50%;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #273010;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #273010;
+    opacity: 50%;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 50%;
+  }
+  
+  /* Header */
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #c7dbde;
+    overflow-y: auto;
+  }
+  
+  #header .profile img {
+    margin: 15px auto;
+    display: block;
+    /*width: 120px;*/
+    width: 70%;
+  }
+  
+  #header .profile h3 {
+    font-size: 17px;
+    color: #005d4a;
+    margin: 0;
+    padding: 0;
+    /*font-weight: 600;*/
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header .profile h4 {
+    font-size: 14px;
+    color: #005d4a;
+    margin: 0;
+    padding-bottom: 10px;
+    /*font-weight: 600;*/
+    -moz-text-align-last: center;
+    text-align-last: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header .profile h3 a,
+  #header .profile h3 a:hover {
+    color: #838383;
+    text-decoration: none;
+  }
+  
+  #header .profile .social-links a {
+    font-size: 20px;
+    display: inline-block;
+    /*background: #00775f;*/
+    color: #000000;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    bottom: 0;
+  }
+  
+  #header .profile .social-links a:hover {
+    background: #bfe9fc;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  #main {
+    margin-left: 300px;
+  }
+  
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+  
+    #main {
+      margin-left: 0;
+    }
+  
+    .container,
+    .container-fluid {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  
+  
+/* Navigation Menu (Desktop)*/
+  .nav-menu {
+    padding: 30px 0 0 0;
+  }
+  
+  .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .nav-menu a,
+  .nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+  
+  .nav-menu a i,
+  .nav-menu a:focus i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #6f7180;
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu .active,
+  .nav-menu .active:focus,
+  .nav-menu li:hover>a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .nav-menu a:hover i,
+  .nav-menu .active i,
+  .nav-menu .active:focus i,
+  .nav-menu li:hover>a i {
+    color: #00775f;
+  }
+  
+/* Navigation Menu (Mobile)*/
+  .mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.5s;
+    outline: none !important;
+    background-color: #273010;
+    opacity: 50%;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+  
+  .mobile-nav-active #header {
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Sections Tag*/
+  section {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    padding-bottom: 1px;
+  }
+
+  .section-title h1 {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    z-index: 4;
+    background: #E9EEED;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: #016350;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .section-title h2 {
+    background: #E9EEED;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+  }
+
+
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /* About Tag */
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #00775f;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+    color: #006853;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+/* Skills Tag */
+  
+  .skills .skills-title {
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #001612;
+  }
+
+  .skills .skills-subtitle {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #001612;
+  }
+  
+/* Resume Tag */
+  .resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #00775f;
+  }
+    
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #005d4a;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 40px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
