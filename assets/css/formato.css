@@ -1,10 +1,18 @@
 @import url("barstyles.css");
 @import url("chart.css");
 
+:root {
+  --body-background-color: #f0efeb;
+  --main-title-color:#12162f;
+  --main-subtitle-color:#1c2249;
+  --header-bg-color:#2b2d42;
+  --header-title-color:#edf2f4;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
-    background-color: #E9EEED;
+    background-color: var(--body-background-color);
     padding-top: 4%;
   }
 
@@ -67,7 +75,7 @@ body {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #c7dbde;
+    background: var(--header-bg-color);
     overflow-y: auto;
   }
   
@@ -80,7 +88,7 @@ body {
   
   #header .profile h3 {
     font-size: 17px;
-    color: #005d4a;
+    color: var(--header-title-color);
     margin: 0;
     padding: 0;
     /*font-weight: 600;*/
@@ -91,7 +99,7 @@ body {
   
   #header .profile h4 {
     font-size: 14px;
-    color: #005d4a;
+    color: var(--header-title-color);
     margin: 0;
     padding-bottom: 10px;
     /*font-weight: 600;*/
@@ -111,7 +119,7 @@ body {
     font-size: 20px;
     display: inline-block;
     /*background: #00775f;*/
-    color: #000000;
+    color: var(--header-title-color);
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -195,14 +203,14 @@ body {
   .nav-menu .active:focus,
   .nav-menu li:hover>a {
     text-decoration: none;
-    color: #000000;
+    color: var(--header-title-color);
   }
   
   .nav-menu a:hover i,
   .nav-menu .active i,
   .nav-menu .active:focus i,
   .nav-menu li:hover>a i {
-    color: #00775f;
+    color: var(--header-title-color);
   }
   
 /* Navigation Menu (Mobile)*/
@@ -254,16 +262,17 @@ body {
     width: 100%;
     z-index: 2;
     z-index: 4;
-    background: #E9EEED;
+    background: var(--body-background-color);
     font-size: clamp(1.5rem, 5vw, 3rem);
-    color: #016350;
+    color: var(--main-title-color);
     font-weight: bold;
     margin-bottom: 5px;
     padding-bottom: 10px;
   }
   
   .section-title h2 {
-    background: #E9EEED;
+    background: var(--body-background-color);
+    color: var(--main-subtitle-color);
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: bold;
     margin-bottom: 5px;
@@ -279,7 +288,7 @@ body {
   .about .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #00775f;
+    color: var(--main-subtitle-color);
   }
   
   .about .content ul {
@@ -295,7 +304,7 @@ body {
   
   .about .content ul strong {
     margin-right: 10px;
-    color: #006853;
+    color: var(--main-subtitle-color);
   }
   
   .about .content ul i {
@@ -326,7 +335,7 @@ body {
     margin-top: 5px;
     text-align: center;
     margin-bottom: 10px;
-    color: #001612;
+    color: var(--main-subtitle-color);
   }
   
 /* Resume Tag */
@@ -335,7 +344,7 @@ body {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #00775f;
+    color: var(--main-subtitle-color);
   }
     
   .resume .resume-item h4 {
@@ -344,7 +353,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #005d4a;
+    color: var(--main-subtitle-color);
     margin-bottom: 10px;
   }
   
