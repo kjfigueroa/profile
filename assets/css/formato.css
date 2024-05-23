@@ -82,8 +82,7 @@ body {
   #header .profile img {
     margin: 15px auto;
     display: block;
-    /*width: 120px;*/
-    width: 70%;
+    width: 170px;
   }
   
   #header .profile h3 {
