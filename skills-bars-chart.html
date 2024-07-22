@@ -1,0 +1,324 @@
+<!--
+  Kevin J. Figueroa M - Skills Bars CV
+  05/14/2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:Lato" rel="stylesheet">
+<style>
+html, body {
+    font-family: "Lato", sans-serif;
+    color: #272829;
+}
+
+.skills-subtitle {
+    font-size: 14px;
+}
+
+.skills_bar {
+  position: relative;
+  line-height: 0.7;
+  z-index: 3;
+}
+
+.skills_bar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+.lines {
+  height: 725px;
+  position: relative;
+}
+
+.line {
+  height: inherit;
+  width: 1px;
+  position: absolute;
+  background: #d8dcdc;
+}
+.line.l--0 {
+  left: 0%;
+}
+.line.l--33 {
+  left: 33%;
+}
+.line.l--66 {
+  left: 66%;
+}
+.line.l--100 {
+  left: calc(100% - 1px);
+}
+
+.line__label {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: 1px;
+  right: -105px;
+  color: #909090;
+}
+
+.line__label_middle {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: 2px;
+  right: -105px;
+  color: #909090;
+}
+
+.charts {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+.chart--horiz {
+  overflow: hidden;
+}
+
+.chart__bar {
+  height: 13px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+
+.chart_wsm {
+    background: #3F4129;
+}
+.chart_vm {
+    background: #867768;
+}
+.chart_conm {
+    background: #556a6e;
+}
+.chart_vc {
+    background: #747965
+}
+.chart_svc {
+    background: #584240;
+}
+.chart_cm {
+    background: #5C7964;
+}
+.chart_amlm {
+    background: #B58A58;
+}
+
+.chart__label {
+  padding-left: 10px;
+  line-height: 10px;
+  font-size: 12px;
+  color: #ffffff;
+/*  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+</style>
+</head>
+   <body>
+         <!-- Skills -->
+         <section class="skills">
+            <div class="skills_bar">
+               <ul class="lines">
+                  <li class="line l--0">
+                     <span class="line__label">
+                     0&nbsp;&#10231;&nbsp;25&nbsp;&#37;
+                     </span>
+                  </li>
+                  <li class="line l--33">
+                     <span class="line__label_middle">
+                     25&nbsp;&#10231;&nbsp;50&nbsp;&#37;
+                     </span>
+                  </li>
+                  <li class="line l--66">
+                     <span class="line__label_middle">
+                        50&nbsp;&#10231;&nbsp;80&nbsp;&#37;
+                     </span>
+                  </li>
+                  <li class="line l--100">
+                     <span class="line__label_expert">
+                     </span>
+                  </li>
+               </ul>
+               <div class="charts">
+                  <div class="chart">
+                     <span class="skills-subtitle">Web Server Management</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b1 chart_wsm" style="width: 70%;">
+                           <span class="chart__label">
+                           Nginx
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_wsm" style="width: 98%;">
+                           <span class="chart__label">
+                           Apache
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_wsm" style="width: 60%;">
+                           <span class="chart__label">
+                           IIS
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="chart">
+                     <span class="skills-subtitle">Virtualization Management</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b2 chart_vm" style="width: 60%;">
+                           <span class="chart__label">
+                           QEMU &#38; KVM
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b2 chart_vm" style="width: 100%;">
+                           <span class="chart__label">
+                           VirtualBox
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b2 chart_vm" style="width: 95%;">
+                           <span class="chart__label">
+                           Vagrant
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="chart chart">
+                     <span class="skills-subtitle">Containerization Management</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b1 chart_conm" style="width: 100%;">
+                           <span class="chart__label">
+                           Docker
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_conm" style="width: 80%;">
+                           <span class="chart__label">
+                           ContainerD
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_conm" style="width: 90%;">
+                           <span class="chart__label">
+                           Orchestration &#8594; Kubernetes
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="chart">
+                     <span class="skills-subtitle">Version Control</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b2 chart_vc" style="width: 90%;">
+                           <span class="chart__label">
+                           Git
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="chart">
+                     <span class="skills-subtitle">Source Version Control</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b1 chart_svc" style="width: 100%;">
+                           <span class="chart__label">
+                           GitHub
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_svc" style="width: 90%;">
+                           <span class="chart__label">
+                           GitLab
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_svc" style="width: 100%;">
+                           <span class="chart__label">
+                           BitBucket
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_svc" style="width: 50%;">
+                           <span class="chart__label">
+                           GitOps
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="chart">
+                     <span class="skills-subtitle">Configuration Management</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b2 chart_cm" style="width: 90%;">
+                           <span class="chart__label">
+                           Ansible
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b2 chart_cm" style="width: 60%;">
+                           <span class="chart__label">
+                           ServiceNow
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b2 chart_cm" style="width: 80%;">
+                           <span class="chart__label">
+                           Chef
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b2 chart_cm" style="width: 70%;">
+                           <span class="chart__label">
+                           AWS Config
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b2 chart_cm" style="width: 70%;">
+                           <span class="chart__label">
+                           Azure Automation Control
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="chart">
+                     <span class="skills-subtitle">Monitoring And Observability</span>
+                     <ul class="chart--horiz">
+                        <li class="chart__bar chart_b1 chart_amlm" style="width: 90%;">
+                           <span class="chart__label">
+                           Prometheus
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_amlm" style="width: 90%;">
+                           <span class="chart__label">
+                           Grafana
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_amlm" style="width: 65%;">
+                           <span class="chart__label">
+                           Loki
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_amlm" style="width: 60%;">
+                           <span class="chart__label">
+                           Datadog
+                           </span>
+                        </li>
+                        <li class="chart__bar chart_b1 chart_amlm" style="width: 70%;">
+                           <span class="chart__label">
+                           Splunk
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         <!-- End Skills Section -->
+        </body>
+</html>
