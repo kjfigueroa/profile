@@ -23,73 +23,66 @@ Kevin J. Figueroa M
 ## Skills
 
 ```mermaid
-flowchart TD
-    subgraph SKILLS-and-Competences; style SKILLS-and-Competences fill:#fff,stroke:#000;
-        subgraph MAIN-STACK; style MAIN-STACK color:#fff,fill:#fff,stroke:#000;
-            direction TB
-            MAIN((Main Stack));style MAIN fill:#fff,stroke:#000;
-            OM[Operations Management];style OM fill:#fff,stroke:#ccc;
-            DT[DevOps Tools];style DT fill:#fff,stroke:#ccc;
-            OMSM[Linux, UNIX]; style OMSM fill:#fff,stroke:#c3c3c3;
-            OMCLI[Bash, Dash,<br>Korn]; style OMCLI fill:#fff,stroke:#ccc;
-            OMPL[Python,Ruby,<br>SQL, PERL]; style OMPL fill:#fff,stroke:#ccc;
-            MAIN --> OM; OM -->|Server Management| OMSM
-            OMSM -->|Shell Scripting| OMCLI; OMSM -->|Programming<br>Languages| OMPL
-            DTWSM[[Nginx, APACHE]]; style DTWSM fill:#fff,stroke:#c1c1c1;
-            DTVM[KVM & KEMU<br>Oracle VirtualBox<br>Vagrant]; style DTVM fill:#fff,stroke:#ccc;
-            DTCM[Docker<br>ContainerD<br>Kubernetes]; style DTCM fill:#fff,stroke:#ccc;
-            DTVCS[GIT]; style DTVCS fill:#fff,stroke:#ccc;
-            DTRHS[GitHub, GitLab,<br>BitBucket]; style DTRHS fill:#fff,stroke:#ccc;
-            DTIAC[Ansible, ServiceNow,<br>Chef,<br>CloudFormation,<br>AWS CDK]; style DTIAC fill:#fff,stroke:#c1c1c1;
-            DTMO[Prometheus,<br>Grafana,<br>DataDog,<br>Splunk]; style DTMO fill:#fff,stroke:#ccc;
-            MAIN --> DT
-            DT -->|Web Server<br>Management| DTWSM
-            DTWSM -->|Virtualization<br>Management| DTVM 
-            DTWSM -->|Containerization<br>Management| DTCM
-            DTCM -->|Version Control| DTVCS
-            DTVCS -->|VCS Hosting| DTRHS 
-            DT -->|Infrastructure<br>as<br>Code| DTIAC
-            DTIAC -->|Monitoring<br>and<br>Observability| DTMO
-        end
-        subgraph Management; style Management color:#fff,fill:#fff,stroke:#000;
-            direction TB
-            PM{{Project Management}};style PM fill:#fff,stroke:#000;
-            DD[Data-Driven<br>Objetive-Based Decision]; style DD fill:#fff,stroke:#ccc;
-            CD[Collaborative<br>Development]; style CD fill:#fff,stroke:#ccc;
-            TP[Team Planning]; style TP fill:#fff,stroke:#ccc;
-            DDSL(( )); style DDSL fill:#fff,stroke:#c1c1c1; 
-            SLI(SLI); style SLI fill:#fff,stroke:#ccc;
-            SLO(SLO); style SLO fill:#fff,stroke:#ccc;
-            CDD(Optimizing Effort<br>through<br>toil reduction); style CDD fill:#fff,stroke:#ccc;
-            TPD(Efficient Communication<br>Team alignment<br>Agile Methodologies);style TPD fill:#fff,stroke:#ccc;
-            PM --> DD; PM --> CD; PM --> TP
-            DD -->|Service Level| DDSL
-            DDSL --> SLI; DDSL --> SLO
-            CD --> CDD; TP --> TPD        
-        end
-        MAIN-STACK --> Management
-    end
+flowchart TB
+MAIN((Main Stack));style MAIN fill:#fff,stroke:#000;
+OM[Operations Management];style OM fill:#fff,stroke:#ccc;
+DT[DevOps Tools];style DT fill:#fff,stroke:#ccc;
+OMSM[Linux, UNIX]; style OMSM fill:#fff,stroke:#c3c3c3;
+OMCLI[Bash, Dash,<br>Korn]; style OMCLI fill:#fff,stroke:#ccc;
+OMPL[Python,Ruby,<br>SQL, PERL]; style OMPL fill:#fff,stroke:#ccc;
+MAIN --> OM; OM -->|Server Management| OMSM
+OMSM -->|Shell Scripting| OMCLI; OMSM -->|Programming<br>Languages| OMPL
+DTWSM[[Nginx, APACHE]]; style DTWSM fill:#fff,stroke:#c1c1c1;
+DTVM[KVM & KEMU<br>Oracle VirtualBox<br>Vagrant]; style DTVM fill:#fff,stroke:#ccc;
+DTCM[Docker<br>ContainerD<br>Kubernetes]; style DTCM fill:#fff,stroke:#ccc;
+DTVCS[GIT]; style DTVCS fill:#fff,stroke:#ccc;
+DTRHS[GitHub, GitLab,<br>BitBucket]; style DTRHS fill:#fff,stroke:#ccc;
+DTIAC[Ansible, ServiceNow,<br>Chef,<br>CloudFormation,<br>AWS CDK]; style DTIAC fill:#fff,stroke:#c1c1c1;
+DTMO[Prometheus,<br>Grafana,<br>DataDog,<br>Splunk]; style DTMO fill:#fff,stroke:#ccc;
+MAIN --> DT
+DT -->|Web Server<br>Management| DTWSM
+DTWSM -->|Virtualization<br>Management| DTVM 
+DTWSM -->|Containerization<br>Management| DTCM
+DTCM -->|Version Control| DTVCS
+DTVCS -->|VCS Hosting| DTRHS 
+DT -->|Infrastructure<br>as<br>Code| DTIAC
+DTIAC -->|Monitoring<br>and<br>Observability| DTMO
 ```
 
-## Experiences
+```mermaid
+flowchart TB
+PM{{Project Management}};style PM fill:#fff,stroke:#000;
+DD[Data-Driven<br>Objetive-Based Decision]; style DD fill:#fff,stroke:#ccc;
+CD[Collaborative<br>Development]; style CD fill:#fff,stroke:#ccc;
+TP[Team Planning]; style TP fill:#fff,stroke:#ccc;
+DDSL(( )); style DDSL fill:#fff,stroke:#c1c1c1; 
+SLI(SLI); style SLI fill:#fff,stroke:#ccc;
+SLO(SLO); style SLO fill:#fff,stroke:#ccc;
+CDD(Optimizing Effort<br>through<br>toil reduction); style CDD fill:#fff,stroke:#ccc;
+TPD(Efficient Communication<br>Team alignment<br>Agile Methodologies);style TPD fill:#fff,stroke:#ccc;
+PM --> DD; PM --> CD; PM --> TP
+DD -->|Service Level| DDSL
+DDSL --> SLI; DDSL --> SLO
+CD --> CDD; TP --> TPD
+```
 
-### Support Engineer
+## Technical Skill-Set as Support Engineer
 
 ```mermaid
 flowchart TD
-L((Support<br>Level 1));style L fill:#ccc,stroke:#000;
-SDT[Software<br>Devices & Technologies]; style SDT fill:#fff,stroke:#fff;
-S(Service); style S fill:#fff,stroke:#fff;
+L((Level 1));style L fill:#ccc,stroke:#000;
+SDT{Software<br>Devices & Technologies}; style SDT fill:#fff,stroke:#ccc;
+S(Service); style S fill:#fff,stroke:#ccc;
 Dv(( ));style Dv fill:#fff,stroke:#000;
-Dv1(DSLAMs: Alcatel, Huawey);style Dv1 fill:#fff,stroke:#fff;
-Dv2(Huawei, Dlink, ZTE);style Dv2 fill:#fff,stroke:#fff;
-A(Routing, Diagnostics,<br>Troubleshooting); style A fill:#fff,stroke:#fff;
-A1(E1, SIP-Trunk, Data,<br>Internet); style A1 fill:#fff,stroke:#fff;
-C(Installation & Configuration);style C fill:#fff,stroke:#fff;
-C1(Device SBC: Acme-Packet);style C1 fill:#fff,stroke:#fff;
-M(Monitoring);style M fill:#fff,stroke:#fff;
-M1(Remedy BMC);style M1 fill:#fff,stroke:#fff;
-M2(SolarWind);style M2 fill:#fff,stroke:#fff;
+Dv1(DSLAMs: Alcatel, Huawey);style Dv1 fill:#fff,stroke:#ccc;
+Dv2(Huawei, Dlink, ZTE);style Dv2 fill:#fff,stroke:#ccc;
+A(Routing, Diagnostics,<br>Troubleshooting); style A fill:#fff,stroke:#ccc;
+A1(E1, SIP-Trunk, Data,<br>Internet); style A1 fill:#fff,stroke:#ccc;
+C(Installation & Configuration);style C fill:#fff,stroke:#ccc;
+C1(Device SBC: Acme-Packet);style C1 fill:#fff,stroke:#ccc;
+M(Monitoring);style M fill:#fff,stroke:#ccc;
+M1(Remedy BMC);style M1 fill:#fff,stroke:#ccc;
+M2(SolarWind);style M2 fill:#fff,stroke:#ccc;
 L --> SDT -->|Telnet, SSH| S
 S -->|Voice| A --> A1; A1 -->|Devices| Dv
 Dv -->|Voice Multiplexers| Dv1; Dv -->|Firewalls|Dv2 
@@ -101,15 +94,15 @@ M -->|Monitoring| M2
 
 ```mermaid
 flowchart TD
-L((Support<br>Level 2 & 3));style L fill:#ccc,stroke:#000;
-SDT[Software<br>Devices & Technologies]; style SDT fill:#fff,stroke:#fff;
-O[Linux, Unix/AIX<br>RHEL/Derivates]; style O fill:#fff,stroke:#fff;
-O1[Process Monitoring<br>Memory Monitoring<br>Network Management<br>Security<br>System Rescue]; style O1 fill:#fff,stroke:#fff;
-OPS[SSH<br>HTTPd, USSD,<br> SMSC, SMPP,<br> HTTP, TCP,<br> UDP, SOAP]; style OPS fill:#fff,stroke:#fff;
-SC[Bash, SQL,<br>Ansible]; style SC fill:#fff,stroke:#fff;
-SC1[Deployment of<br>New Services Features]; style SC1 fill:#fff,stroke:#fff;
-SV[Apache TOMCAT,<br>APACHE HTTP,<br>];style SV fill:#fff,stroke:#fff;
-SL[Jira Software<br>and<br>On Call]; style SL fill:#fff,stroke:#fff;
+L((Level 2 & 3));style L fill:#ccc,stroke:#000;
+SDT{Software<br>Devices & Technologies}; style SDT fill:#fff,stroke:#ccc;
+O[Linux, Unix/AIX<br>RHEL/Derivates]; style O fill:#fff,stroke:#ccc;
+O1[Process Monitoring<br>Memory Monitoring<br>Network Management<br>Security<br>System Rescue]; style O1 fill:#fff,stroke:#ccc;
+OPS[SSH<br>HTTPd, USSD,<br> SMSC, SMPP,<br> HTTP, TCP,<br> UDP, SOAP]; style OPS fill:#fff,stroke:#ccc;
+SC[Bash, SQL,<br>Ansible]; style SC fill:#fff,stroke:#ccc;
+SC1[Deployment of<br>New Services Features]; style SC1 fill:#fff,stroke:#ccc;
+SV[Apache TOMCAT,<br>APACHE HTTP,<br>];style SV fill:#fff,stroke:#ccc;
+SL[Jira Software<br>and<br>On Call]; style SL fill:#fff,stroke:#ccc;
 L --> SDT
 SDT -->|OS Management| O; O -->|Operations| O1
 SDT -->|Operations<br>On<br>Protocols| OPS
