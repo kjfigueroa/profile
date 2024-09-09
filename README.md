@@ -111,7 +111,7 @@ SDT -->|Servering| SV
 SDT -->|Service Level<br>Agrements| SL
 ```
 
-## Skill-Set as DevOps & Site Reliability Engineering
+## Skill-Set as DevOps
 
 ```mermaid
 flowchart TD
@@ -177,6 +177,8 @@ Amazon-Web-Services --> Metrics_and_Observability
 Amazon-Web-Services --> CI-CD --> Deployment_Automation --> Metrics_and_Observability
 ```
 
+## Skill-Set as Site Reliability Engineer
+
 ```mermaid
 flowchart TB
 sre((&nbsp;Site Reliability&nbsp;<br>Engineer)); style sre fill:#dcdcdc,stroke:#000;
@@ -193,9 +195,46 @@ tech --> Agile-Methodologies
 I take on big challenges and have a strong ability to deliver solutions that thrive in complex environments. I am attracted to innovation, my vision is to focus on discipline, consistency and technique to achieve my goals and objectives as close as possible to the results I expect.
 
 ```mermaid
-flowchart LR
-A(( ))
-B[Leading Adoption of Agile Methodologies]
+flowchart TD
+sre((&nbsp;Site Reliability&nbsp;<br>Engineer)); style sre fill:#dcdcdc,stroke:#000;
+tech{{Technologies<br>and<br>Techniques}}; style tech fill:#fff,stroke:#ccc;
+sre --> tech
+subgraph Information-Tools; style Information-Tools color:#fff,fill:#fff,stroke:#c7c7c7;
+    subgraph Agile-Methodologies; style Agile-Methodologies fill:#f2f2f2,stroke:#000;
+        amethod[Safe5<br>Scrum]; style amethod fill:#fff,stroke:#fff;
+    end
+    subgraph Team-Coach; style Team-Coach fill:#fff,stroke:#000;
+        comm[Communications Tools]; style comm fill:#fff,stroke:#ccc;
+        conf[Confluence]; style conf fill:#fff,stroke:#ccc;
+        teams[Microsoft Teams]; style teams fill:#fff,stroke:#ccc;
+        miro[Miro Board]; style miro fill:#fff,stroke:#ccc;
+        comm --> conf; comm --> teams; comm --> miro
+    end
+    subgraph Incident-Management; style Incident-Management fill:#fff,stroke:#000;
+        direction LR
+        jira(Atlassian<br>Jira Software); style jira fill:#fff,stroke:#ccc;
+        OL[Microsoft Outlook]; style OL fill:#fff,stroke:#ccc;
+        pduty[PagerDuty]; style pduty fill:#fff,stroke:#ccc;
+        snow[Service Now]; style snow fill:#fff,stroke:#ccc;
+        slack[Slack]; style slack fill:#fff,stroke:#ccc;
+        jira --> pduty; jira --> snow
+        OL <--> jira
+        slack --> pduty; slack --> jira; slack --> snow
+    end
+    Agile-Methodologies --> Team-Coach --> Incident-Management
+end
+subgraph Financial-Management; style Financial-Management color:#f2f2f2,fill:#f2f2f2,stroke:#000; 
+    AWS[AWS]; style AWS fill:#fff,stroke:#fff;
+    BCM[Billing and Cost<br>Management];style BCM fill:#fff,stroke:#fff;
+    ACS[AWS<br>Cost Explorer];style ACS fill:#fff,stroke:#fff;
+    AWS --> BCM; AWS --> ACS;
+end
+POINT(( )); style POINT fill:#fff,stroke:#ccc;
+POINT -.-> Agile-Methodologies
+tech --> Agile-Methodologies
+tech --> AWS
+BCM -.-> POINT
+ACS -.-> POINT
 ```
 
 Responsible for leading the adoption of agile methodologies to
@@ -227,39 +266,3 @@ Miro Board, Atlassian's Confluence and Microsoft Teams.
 
 Oversee costs and budgets for each project and service deployed in
 the Amazon cloud.
-
-```mermaid
-flowchart TB
-subgraph SRE-Manager; style SRE-Manager fill:#fff,stroke:#000;
-    subgraph Agile-Methodologies; style Agile-Methodologies fill:#f2f2f2,stroke:#000;
-        amethod[Safe5<br>Scrum]; style amethod fill:#fff,stroke:#fff;
-    end
-    subgraph Financial-Management; style Financial-Management fill:#f2f2f2,stroke:#000; 
-        AWS[AWS]; style AWS fill:#fff,stroke:#fff;
-        BCM[Billing and Cost<br>Management];style BCM fill:#fff,stroke:#fff;
-        ACS[AWS<br>Cost Explorer];style ACS fill:#fff,stroke:#fff;
-        AWS --> BCM; AWS --> ACS;
-    end
-    subgraph Information-Tools; style Information-Tools fill:#f2f2f2,stroke:#000;
-        subgraph Team-Coach; style Team-Coach fill:#fff,stroke:#000;
-            comm[Communications Tools]; style comm fill:#fff,stroke:#ccc;
-            conf[Confluence]; style conf fill:#fff,stroke:#ccc;
-            teams[Microsoft Teams]; style teams fill:#fff,stroke:#ccc;
-            miro[Miro Board]; style miro fill:#fff,stroke:#ccc;
-            comm --> conf; comm --> teams; comm --> miro
-        end
-        subgraph Incident-Management; style Incident-Management fill:#fff,stroke:#000;
-            direction LR
-            jira(Atlassian<br>Jira Software); style jira fill:#fff,stroke:#ccc;
-            OL[Microsoft Outlook]; style OL fill:#fff,stroke:#ccc;
-            pduty[PagerDuty]; style pduty fill:#fff,stroke:#ccc;
-            snow[Service Now]; style snow fill:#fff,stroke:#ccc;
-            slack[Slack]; style slack fill:#fff,stroke:#ccc;
-            jira --> pduty; jira --> snow
-            OL <--> jira
-            slack --> pduty; slack --> jira; slack --> snow
-        end
-        Team-Coach --> Incident-Management
-    end
-end
-```
