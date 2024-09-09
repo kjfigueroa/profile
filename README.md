@@ -12,30 +12,39 @@ Kevin J. Figueroa M
     * SysAdmin
     * Support Engineer
 
-----
+## Aproach
 
-Responsible for leading the adoption of agile methodologies to develop a mindset of success and continuous improvement in my division's DevOps teams, fostering self-sufficiency and diverse group
-agility competencies.
+1. Responsible for leading the adoption of **Agile Methodologies** to develop a mindset of success and continuous improvement in my division's DevOps teams, fostering **self-sufficiency** and agility competencies.
 
-Ensure the methodological application of “The twelve-factor app” in web and mobile applications, seeking to offer maximum portability in execution environments, in addition to standardizing the mechanisms for recording and reporting accuracy on these services and resources in the cloud.
+2. Ensure the methodological application of **The twelve-factor app** in web and mobile applications, seeking to offer maximum portability in execution environments, in addition to standardizing the mechanisms for recording and reporting accuracy on these services and resources in the cloud.
 
-Delegate tasks to members of the engineering team (eight people) and advise on all aspects of the project.
-Collaborate in the development of plans and roadmaps for new production releases, manage configurations and service recovery by applying the different methods of deployment and continuous delivery.
+3. Delegate tasks to members of the engineering team and advise on all aspects of the project. Collaborate in the development of **plans** and **roadmaps** for new **production releases**, manage configurations and service recovery by applying the different methods of **deployment** and **continuous delivery**.
 
-Ensure SLO prevalence, KPI scoring, manage Application error control, as well as system alerting and monitoring solutions, organize incident response and disaster recovery monitoring/collaboration.
+4. Ensure **SLO** prevalence, **KPI** scoring, manage Application **error control**, as well as **system alerting and monitoring** solutions, organize incident response and **disaster recovery monitoring**.
 
-Apply various collaborative tools for information flow (Development Workflow, Asynchronous Collaboration, Process Mapping and Diagramming), collaborate with the development of plans and tracking of project cycles using agile methodologies implemented in: Miro Board, Atlassian's Confluence and Microsoft Teams.
+5. Apply various collaborative tools for information flow (Development Workflow, Asynchronous Collaboration, Process Mapping and Diagramming), collaborate with the development of plans and tracking of project cycles using agile methodologies implemented in: Miro Board, Atlassian's Confluence and Microsoft Teams.
 
-Oversee costs and budgets for each project and service deployed in the Amazon cloud.
+6. Oversee costs and budgets for each project and service deployed in the Amazon cloud.
 
-I collaborated with the implementation and continuous delivery of microservices, ensuring their transition to production environments.
-I provided management and configuration methods for the continuous delivery of software to production during its different stages of deployment, verifying the execution of processes and integration of new code through various automation and provisioning tools.
-I developed several scripts to facilitate support operations in Python, Bash and Ruby.
-Process management for the provisioning and deployment of web applications for five projects in production, through the application of Pipelines using Ansible, Chef and Terraform.
-Managed incident management, infrastructure requirements, user administration, wiki (knowledge base) documentation, and role and user management for multiple services on AWS, for Atlassian and PagerDuty tools. Management performed through the same tools.
-Application of software deployment strategies: Blue-green, Canary Deployment, and Rolling Out.
+7. Collaboring with the implementation and **continuous delivery of microservices**, ensuring their transition to production environments.
 
-----
+8. Provide management and configuration methods for the **continuous delivery** of software to production during its different **stages of deployment**, verifying the execution of processes and integration of new code through various automation and provisioning tools.
+
+9. Developing scripts to facilitate **support operations** in `python`, `bash` and `ruby`.
+
+10. Process management for the provisioning and deployment of **web applications** for projects in production, through the application of **Pipelines** using **Ansible**, **Chef** and **Terraform**.
+
+11. Managed incident, infrastructure requirements, user administration, wiki (knowledge base) documentation, and role and user management for multiple services on AWS, for Atlassian and PagerDuty tools. Management performed through the same tools.
+
+12. Application of software **deployment strategies**: **Blue-green**, **Canary Deployment**, and **Rolling Out**.
+
+13. Be an engineer capable of managing data that helps make decisions based on clear objectives and service metrics. **Services Level Objectives (SLOs)** and **Service Level Indicators (SLIs)**.
+
+14. Focused on facilitating ways to optimize effort. Seeking perspectives that allow the reduction of repetitive processes through automation techniques.
+
+15. I plan my communication to align current goals with those required in the long term through agreed roadmaps.
+
+
 
 ```mermaid
 flowchart TB
@@ -80,7 +89,6 @@ DD -->|Service Level| DDSL
 DDSL --> SLI; DDSL --> SLO
 CD --> CDD; TP --> TPD
 ```
-----
 
 ```mermaid
 flowchart TD
@@ -124,10 +132,6 @@ SDT -->|Scripting| SC --> SC1
 SDT -->|Servering| SV
 SDT -->|Service Level<br>Agrements| SL
 ```
-
-----
-
-## Skill-Set as DevOps
 
 ```mermaid
 flowchart TD
@@ -193,25 +197,23 @@ Amazon-Web-Services --> Metrics_and_Observability
 Amazon-Web-Services --> CI-CD --> Deployment_Automation --> Metrics_and_Observability
 ```
 
-## Skill-Set as Site Reliability Engineer
-
 ```mermaid
 flowchart TB
-sre((&nbsp;&nbsp;&nbsp;<b>Site Reliability</b>&nbsp;&nbsp;&nbsp;<br><b>Engineer</b>)); style sre fill:#dcdcdc,stroke:#000;
-tech{{Technologies<br>and<br>Techniques}}; style tech fill:#fff,stroke:#ccc;
-sre --> tech
-subgraph Agile-Methodologies; style Agile-Methodologies fill:#f2f2f2,stroke:#000;
-    amethod[Safe5<br>Scrum]; style amethod fill:#fff,stroke:#fff;
+subgraph sreengineer; style sreengineer color:#fff,fill:#fff,stroke:#000;
+    sre((<b>Site Reliability</b><br><b>Engineer</b>)); style sre fill:#fff,stroke:#fff;
+    tech{{Technologies<br>and<br>Techniques}}; style tech fill:#fff,stroke:#ccc;
+    sreall[(<br>SRE Framework<br>)];style sreall fill:#f2f2f2,stroke:#000;
+    subgraph Agile-Methodologies; style Agile-Methodologies fill:#f2f2f2,stroke:#000;
+        amethod[Safe5<br>Scrum]; style amethod fill:#fff,stroke:#fff;
+    end
 end
-tech --> Agile-Methodologies
+sreall --> Agile-Methodologies --> tech; tech --> sreall
 ```
-
-### Site Reliability Engineering Manager
 
 ```mermaid
 flowchart TD
 sre((&nbsp;&nbsp;&nbsp;<b>Site Reliability&nbsp;&nbsp;&nbsp;</b>&nbsp;<br>&nbsp;&nbsp;&nbsp;<b>Engineering Manager&nbsp;&nbsp;&nbsp;</b>)); style sre fill:#dcdcdc,stroke:#000;
-tech{{<br>&nbsp;&nbsp;&nbsp;Technologies&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;and Techniques&nbsp;&nbsp;&nbsp;<br><br>}}; style tech fill:#fff,stroke:#ccc;
+tech[<br>&nbsp;&nbsp;&nbsp;Technologies&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;and Techniques&nbsp;&nbsp;&nbsp;<br><br>]; style tech fill:#fff,stroke:#ccc;
 sre --> tech
 subgraph Information-Tools; style Information-Tools color:#fff,fill:#fff,stroke:#c7c7c7;
     subgraph Agile-Methodologies; style Agile-Methodologies fill:#f2f2f2,stroke:#000;
